@@ -1,107 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="SineLabs water optimization and biofilm disruption system for pools, hotels, agriculture, oil & gas, and more. Schedule a free demo or consult our AI advisor." />
-  <meta name="keywords" content="SineLabs, biofilm, water treatment, eco-friendly, cooling towers, chemical-free, hotel water systems, pool disinfection, agriculture water systems" />
-  <title>SineLabs | EcoTelos Partner Portal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoTelos provides smart infrastructure retrofitting solutions across energy, water, and telecommunications sectors. Partnering with leading technologies to build sustainable, intelligent systems.">
+  <meta name="keywords" content="smart infrastructure, water treatment, telecommunications, sustainable retrofitting, EcoTelos, energy optimization">
+  <title>EcoTelos | Smart Infrastructure Solutions</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
+      background: #f7f7f7;
       color: #111;
     }
-
     header, footer {
       background: #00394f;
       color: white;
-      padding: 1.2rem 2rem;
       text-align: center;
+      padding: 1.2rem 2rem;
     }
-
-    h1 {
-      font-size: 1.8rem;
-      margin: 0.5rem 0;
-    }
-
     nav {
-      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
     }
-
-    nav button {
+    nav a {
       background: #007c91;
       color: white;
-      border: none;
-      padding: 0.7rem 1.2rem;
-      margin: 0.3rem;
+      padding: 0.6rem 1.2rem;
       border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
+      text-decoration: none;
+      font-weight: 500;
     }
-
     main {
-      padding: 1.5rem;
-      max-width: 1100px;
+      padding: 2rem;
+      max-width: 1000px;
       margin: auto;
     }
-
-    section {
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
       background: white;
-      margin-bottom: 2rem;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
-
-    .dropdown {
-      width: 100%;
-      max-width: 400px;
-      padding: 0.7rem;
-      font-size: 1rem;
-      margin-top: 1rem;
+    .card h3 {
+      margin-top: 0;
     }
-
-    iframe {
-      border: none;
-      width: 100%;
-      height: 400px;
-      margin-top: 1rem;
+    footer {
+      font-size: 0.9rem;
     }
-
-    @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-      nav button {
-        display: block;
+    @media screen and (max-width: 600px) {
+      nav a {
         width: 100%;
-        margin: 0.5rem auto;
+        text-align: center;
       }
     }
   </style>
-  <script>
-    function updateContent() {
-      const industry = document.getElementById('industry').value;
-      const content = {
-        pools: "SineLabs eliminates harmful bacteria and biofilm in pools without chlorine. Better for your swimmers, filters, and bottom line.",
-        hotels: "Cut chemical usage in hotel water systems up to 75%. SineLabs reduces maintenance and improves guest safety.",
-        agriculture: "Non-invasive water treatment keeps irrigation systems flowing and extends the life of your infrastructure.",
-        cooling: "Fight scale and biofilm in cooling towers. Lower energy use. Reduce chemical handling.",
-        oilgas: "Our tech prevents fouling in pipelines and tanks. Boost uptime and reduce chemical and cleaning costs.",
-        breweries: "Food-safe biofilm control. Protect brewing tanks and water lines without adding risk or residues.",
-        data: "Secure chemical-free cooling for your server farms and battery banks. Improve thermal efficiency and prevent downtime."
-      };
-      document.getElementById('usecase').innerText = content[industry] || '';
-    }
-  </script>
 </head>
 <body>
-
   <header>
-    <h1>SineLabs Water Optimization</h1>
-    <p>Electrically eliminate biofilm. No chemicals. No compromise.</p>
+    <h1>EcoTelos</h1>
+    <p>Smart Infrastructure. Global Impact. Sustainable Intelligence.</p>
     <nav>
-      <button onclick="document.getElementById('demo').scrollIntoView({behavior:'smooth'})">Schedule Demo</button>
-      <button onclick="document.getElementById('ai').scrollIntoVi
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#contact">Contact</a>
+      <a href="/sinelabs.html">SineLabs Portal</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About EcoTelos</h2>
+      <p>EcoTelos is a global leader in smart infrastructure retrofitting—offering advanced solutions for water, energy, and telecommunications. We help modernize facilities through intelligent systems integration, sustainable technology, and AI-powered optimization tools.</p>
+    </section>
+
+    <section id="solutions">
+      <h2>Our Solutions</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>SineLabs</h3>
+          <p>Non-chemical biofilm disruption for pools, hotels, cooling towers, and agriculture.</p>
+          <a href="/sinelabs.html">Learn More</a>
+        </div>
+        <div class="card">
+          <h3>ClearWorld</h3>
+          <p>Smart solar lighting and IoT-ready urban infrastructure solutions.</p>
+        </div>
+        <div class="card">
+          <h3>Virien</h3>
+          <p>Advanced analytics, energy dashboards, and facility automation.</p>
+        </div>
+        <div class="card">
+          <h3>Telecom & Cybersecurity</h3>
+          <p>Secure networks, SD-WAN, IoT connectivity, and IT modernization through Sandler Partners technology stack.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact EcoTelos</h2>
+      <p>Email us: <strong>info@ecotelos.com</strong></p>
+      <p>We are actively retrofitting the world's infrastructure. Join us.</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 EcoTelos. All rights reserved.
+  </footer>
+</body>
+</html>
