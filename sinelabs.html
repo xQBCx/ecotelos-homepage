@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore SineLabs' chemical-free water optimization solutions for pools, hotels, agriculture, and industrial systems. Schedule a free consultation or use our AI Advisor.">
+  <meta name="keywords" content="biofilm removal, water treatment, sine labs, EcoTelos, pool treatment, cooling towers, agriculture water systems, energy optimization">
+  <title>SineLabs Portal | EcoTelos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+      color: #111;
+    }
+    header, footer {
+      background: #00394f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .dropdown {
+      margin: 1rem auto;
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      padding: 0.6rem;
+      font-size: 1rem;
+    }
+    .industry-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      margin-top: 1.5rem;
+    }
+    button {
+      background-color: #007c91;
+      color: white;
+      padding: 0.8rem 1.4rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin: 1rem auto;
+      display: block;
+    }
+  </style>
+  <script>
+    function showContent() {
+      const val = document.getElementById('industry').value;
+      const output = document.getElementById('output');
+      const content = {
+        pools: "SineLabs safely treats pools by using electric fields to eliminate harmful biofilm and bacteria — no chlorine, no residue."
+          + " Perfect for hotels, residential, and recreational facilities.",
+        hotels: "Hotels reduce chemical usage by up to 75% and extend asset life with SineLabs water optimization systems.",
+        agriculture: "Irrigation systems remain clean and efficient. Crops benefit from biofilm-free water — boosting health and yield.",
+        cooling: "Cooling towers stay cleaner longer. SineLabs reduces fouling, improves thermal performance, and minimizes chemical costs.",
+        oilgas: "Pipelines and tanks operate more efficiently with biofilm-free interiors. Reduce costly downtime and corrosion.",
+        breweries: "Protect food-grade tanks and water lines in brewing and beverage manufacturing — without chemical residues.",
+        data: "Enable thermal efficiency in server cooling systems. Extend uptime and avoid chemical cleaning cycles."
+      };
+      output.innerText = content[val] || "Select an industry to see how SineLabs helps.";
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>SineLabs Portal</h1>
+    <p>Empowering Infrastructure with Chemical-Free Water Treatment</p>
+  </header>
+
+  <main>
+    <h2>Choose Your Infrastructure Type</h2>
+    <select class="dropdown" id="industry" onchange="showContent()">
+      <option value="">-- Select --</option>
+      <option value="pools">Swimming Pools</option>
+      <option value="hotels">Hotels</option>
+      <option value="agriculture">Agriculture / Irrigation</option>
+      <option value="cooling">Cooling Towers</option>
+      <option value="oilgas">Oil & Gas</option>
+      <option value="breweries">Breweries & Food Processing</option>
+      <option value="data">Data Centers</option>
+    </select>
+
+    <div class="industry-content" id="output">
+      <p>Select an industry to see how SineLabs helps.</p>
+    </div>
+
+    <h2>AI-Powered SineLabs Advisor</h2>
+    <iframe src="https://chatgpt.com/g/g-ig8HUwjOS" title="SineLabs AI Advisor"></iframe>
+
+    <h2>Schedule a Free Demo</h2>
+    <p>Meet with our experts to see how SineLabs can save you time, money, and chemicals.</p>
+    <iframe src="https://calendly.com/YOUR-CALENDLY-LINK" title="Schedule a Demo"></iframe>
+
+    <button onclick="window.location.href='/index.html'">← Back to EcoTelos</button>
+  </main>
+
+  <footer>
+    &copy; 2025 EcoTelos & SineLabs. All rights reserved.
+  </footer>
+</body>
+</html>
